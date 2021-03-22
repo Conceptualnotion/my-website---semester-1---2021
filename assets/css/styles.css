@@ -4,11 +4,26 @@ body {
 }
 
 header {
-    background-color: antiquewhite;
+    background-color: blue;
+    height: 200px;
+    width: 800px;
+    margin-left: 100px;
+    padding: 20px;
+}
+
+h1 {
+    background-color: orange;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /*    display: inline-block;*/
 }
 
 nav {
     background-color: aqua;
+    border: 5px solid: red;
+    width: 500px;
+    float: right;
 }
 
 main {
@@ -17,4 +32,5 @@ main {
 
 footer {
     background-color: beige;
+    /*    display: none;*/
 }
