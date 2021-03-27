@@ -1,7 +1,57 @@
 body {
     background-color: 99cc00;
     color: #ffffff;
+    font-family: arial, helvitica, sans-serif;
+    /*    Ensure family and size are swet in Body */
+    /*    Arial is my default font, Helvetica is my fallback font. Both are sans-serif. */
+    font-size: 16px;
+    /*    This is the default font size and applies to the whole page. When I begin responsive css, I will adjust elements based on this font size I have set above in the Body */
 }
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: serif;
+    margin-bottom: 20px;
+}
+
+h1 {
+    background-color: orange;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /*    display: inline-block;*/
+    font-size: 26px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+    padding: 8px 0;
+    letter-spacing: 1px;
+    color: black;
+    background-color: aquamarine;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p {
+
+    font-size: 18px;
+    line-height: normal;
+    margin-bottom: 10px;
+    /*    When I  added my reset file in, I lost the space between the paragraphs, so margin-bottom restores this. */
+}
+
+/* Main Containers */
 
 .wrapper {
     width: 1500px;
@@ -15,13 +65,7 @@ header {
     padding: 20px;
 }
 
-h1 {
-    background-color: orange;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    /*    display: inline-block;*/
-}
+
 
 nav {
     background-color: aqua;
@@ -30,9 +74,11 @@ nav {
 
 main {
     background-color: blueviolet;
+    padding: 10px;
 }
 
 footer {
     background-color: beige;
+    padding: 15px;
     /*    display: none;*/
 }
