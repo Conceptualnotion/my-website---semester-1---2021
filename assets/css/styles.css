@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,700;1,700&family=Lexend:wght@400;500;700&display=swap');
+
 body {
     background-color: 99cc00;
     color: #ffffff;
-    font-family: arial, helvitica, sans-serif;
-    /*    Ensure family and size are swet in Body */
+    font-family: 'Lexend', sans-serif;
+    /*    Ensure family and size are set in Body */
     /*    Arial is my default font, Helvetica is my fallback font. Both are sans-serif. */
     font-size: 16px;
     /*    This is the default font size and applies to the whole page. When I begin responsive css, I will adjust elements based on this font size I have set above in the Body */
@@ -15,7 +17,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: serif;
+    font-family: 'Bitter', serif;
     margin-bottom: 20px;
 }
 
@@ -51,6 +53,29 @@ p {
     /*    When I  added my reset file in, I lost the space between the paragraphs, so margin-bottom restores this. */
 }
 
+/* Anchor Styles */
+
+a {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+
+}
+
+a:visited {
+    color: blueviolet;
+
+}
+
+a:active {
+    color: yellow;
+    /*    Particularly good for mobile devices, only displays momentarily  */
+}
+
 /* Main Containers */
 
 .wrapper {
@@ -72,13 +97,46 @@ nav {
     border: 5px solid: red;
 }
 
+nav ul {}
+
+nav ul li {
+    display: inline;
+    margin-right: 7px;
+
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    background-color: beige;
+    padding: 8px 13px;
+}
+
+nav ul li a:hover {
+    background-color: aqua;
+    text-decoration: none;
+    /*    over-rides css inheritance from previous underlined coding */
+}
+
 main {
     background-color: blueviolet;
     padding: 10px;
+    overflow: auto;
 }
 
 footer {
     background-color: beige;
     padding: 15px;
     /*    display: none;*/
+}
+
+.leftimg {
+    /*    dot . because its a class */
+    width: 65%;
+    float: inherit;
+    border: 1px solid grey;
+    padding: 20px;
+    background-color: white;
+    margin: 0 80px;
+
 }
