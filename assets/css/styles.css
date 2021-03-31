@@ -2,7 +2,7 @@
 
 body {
     background-color: 99cc00;
-    color: #ffffff;
+    color: #000000;
     font-family: 'Lexend', sans-serif;
     /*    Ensure family and size are set in Body */
     /*    Arial is my default font, Helvetica is my fallback font. Both are sans-serif. */
@@ -22,12 +22,14 @@ h6 {
 }
 
 h1 {
-    background-color: orange;
-    text-align: center;
+
+
     padding-top: 20px;
     padding-bottom: 20px;
-    /*    display: inline-block;*/
+    display: inline-block;
     font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 h2 {
@@ -38,7 +40,7 @@ h2 {
     padding: 8px 0;
     letter-spacing: 1px;
     color: black;
-    background-color: aquamarine;
+
 }
 
 h3 {
@@ -57,7 +59,7 @@ p {
 
 a {
     color: white;
-    background-color: black;
+
     text-decoration: none;
 }
 
@@ -85,19 +87,21 @@ a:active {
 }
 
 header {
-    background-color: blue;
-    height: 200px;
+
     padding: 20px;
 }
 
 
 
 nav {
-    background-color: aqua;
+
     border: 5px solid: red;
 }
 
-nav ul {}
+nav ul {
+    float: right;
+    margin-bottom: auto;
+}
 
 nav ul li {
     display: inline;
@@ -108,26 +112,47 @@ nav ul li {
 nav ul li a {
     color: black;
     text-decoration: none;
-    background-color: beige;
+
     padding: 8px 13px;
 }
 
-nav ul li a:hover {
-    background-color: aqua;
+nav ul li a:hover,
+nav ul li a.currentpage {
+    background-color: #6bb5d6;
     text-decoration: none;
     /*    over-rides css inheritance from previous underlined coding */
+    color: white;
+}
+
+.hero {
+    min-height: 350px;
+    background-image: url(../images/churchill-house-13.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #F5F5F5;
 }
 
 main {
-    background-color: blueviolet;
+
     padding: 10px;
     overflow: auto;
 }
 
+.text-container {
+    width: 60%;
+}
+
 footer {
-    background-color: beige;
+
     padding: 15px;
     /*    display: none;*/
+    background-color: #F5F5F5;
+    border-top: 1px solid #D6D6D6;
+}
+
+footer p {
+    font-size: 75%;
 }
 
 .leftimg {
