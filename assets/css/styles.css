@@ -157,7 +157,7 @@ footer p {
 
 .leftimg {
     /*    dot . because its a class */
-    width: 65%;
+    width: 40%;
     float: inherit;
     border: 1px solid grey;
     padding: 20px;
