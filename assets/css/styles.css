@@ -23,7 +23,7 @@ h6 {
 
 h1 {
 
-
+    padding: 20px 0 20px 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     display: inline-block;
@@ -44,10 +44,12 @@ h2 {
 }
 
 h3 {
-    font-size: 18px;
+    font font-size: 1.5rem;
+    padding: 4rem 0 2rem 0;
 }
 
-p {
+p,
+ul {
 
     font-size: 18px;
     line-height: normal;
@@ -61,6 +63,20 @@ a {
     color: white;
 
     text-decoration: none;
+}
+
+main {
+    margin: 0 auto;
+    width: 960px;
+}
+
+main ul {
+    font-size: 18px;
+    list-style: disc;
+}
+
+main ul li {
+    margin-left: 8rem;
 }
 
 a:hover {
@@ -139,9 +155,7 @@ main {
     overflow: auto;
 }
 
-.text-container {
-    width: 60%;
-}
+
 
 footer {
 
