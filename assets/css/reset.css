@@ -114,6 +114,7 @@ body {
 ol,
 ul {
     list-style: none;
+    /*removes bullets points and 40px margin on nav */
 }
 
 blockquote,

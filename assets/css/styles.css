@@ -63,6 +63,8 @@ a {
     color: white;
 
     text-decoration: none;
+    /* no underline on Title and in-text links. */
+
 }
 
 main {
@@ -79,19 +81,25 @@ main ul li {
     margin-left: 8rem;
 }
 
+
+
+
 a:hover {
     text-decoration: underline;
+    /* underline when hovering over Title & in-text links for visual feedback. */
 
 }
 
 a:visited {
     color: blueviolet;
+    /* Bright purple colour stands out to remind user of visited state. */
+
 
 }
 
 a:active {
-    color: yellow;
-    /*    Particularly good for mobile devices, only displays momentarily  */
+    color: #6bb5d6;
+    /*    Particularly good for mobile devices, only displays momentarily. Green matches primary navigation button colour.  */
 }
 
 /* Main Containers */
@@ -121,20 +129,31 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 7px;
+    /* display: inline means that the element - is displayed inline, inside the current block on the same line, across the page, rather then vertically. https://stackoverflow.com/questions/3099030/displayinline-vs-displayblock */
+    margin-right: 20px;
+    /* Margin between button elements is 20px. */
+    /* nav is positioned 20px from right edge. */
+
 
 }
 
 nav ul li a {
     color: black;
+    /* nav menu button link text is black */
     text-decoration: none;
-
+    /* removes underline */
+    /* no background color necessary for button, except when hovered over - see below. This maintains minimalism and a clean design. */
     padding: 8px 13px;
+    /* button padding dimensions appear when user hovers over link. */
+    letter-spacing: 0.7px;
+    /* Increases kerning or letter-spacing. I used a very compact typeface so this allows for some space between individual characters. */
 }
 
 nav ul li a:hover,
+/* css pseudo element for button hover-state. A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the selected element(s). https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements */
 nav ul li a.currentpage {
     background-color: #6bb5d6;
+    /* This shade of green displays when user hovers over the anchor tag or button with their curser. Provides great visual feedback. */
     text-decoration: none;
     /*    over-rides css inheritance from previous underlined coding */
     color: white;
@@ -172,10 +191,31 @@ footer p {
 .leftimg {
     /*    dot . because its a class */
     width: 40%;
-    float: inherit;
+    float: left;
     border: 1px solid grey;
-    padding: 20px;
+    /* color of border outside line. */
+    padding: 10px;
+    /* width of the white border. */
     background-color: white;
-    margin: 0 80px;
+    margin: 12px 30px;
 
+}
+
+.rightimg {
+    width: 40%;
+    float: right;
+    border: 1px solid grey;
+    padding: 10px;
+    background-color: white;
+    margin: 12px 38px;
+}
+
+.centerimg {
+    width: 78.5%;
+    float: center;
+    border: 1px solid grey;
+    padding: 10px;
+    background-color: white;
+    margin: 15px 80px;
+    /* 15px margin leaves some space at the top of the image, below the back to top link. */
 }
