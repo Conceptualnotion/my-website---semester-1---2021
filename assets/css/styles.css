@@ -196,6 +196,17 @@ footer p {
     font-size: 75%;
 }
 
+.max-width-100-height-auto {
+    max-width: 100%;
+    height: auto;
+}
+
+/* I 'applied the width at 100% to get the image to become flexible within the container itself.  Remember that if an image is set to width: 100% on a container that occupies 70% of the viewport, then the image will occupy 70% of the viewport (but 100% of the container).' https://responsivedesign.is/guidelines/flexible-images-and-media/*/
+
+/* The Container is 100% or the maximum screen resolution. 'Containers are used to pad the content inside of them'. https://www.w3schools.com/bootstrap4/bootstrap_containers.asp */
+
+/* For a smart tv (3840px x 1920px), the original resolution of the image - (800px x 600px) - as viewed on my laptop 1920px x 1080px (see Robin Boyd Portrait tag on legacy.html) - will double or enlarge to 1600px x 1200px, whilst remaining in proportion to the rest of the dimensions of the web site. Similarly, the image will contract in proportion to the pages design when viewed on a smaller tablet or mobile device. */
+
 .leftimg {
     /*    dot . because its a class */
     width: 40%;
