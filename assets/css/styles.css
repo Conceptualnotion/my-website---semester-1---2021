@@ -64,6 +64,16 @@ ul {
     /*    When I  added my reset file in, I lost the space between the paragraphs, so margin-bottom restores this. */
 }
 
+figure,
+figcaption {
+
+    display: block;
+    font-style: italic;
+    font-variant: normal;
+    text-align: center;
+
+}
+
 
 /* Anchor Styles */
 
